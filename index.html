@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>travel blog</title>
+</head>
+<body>
+        <!-- header -->
+        <header>
+            <div id="menu-bar" class="fas fa-bars" onclick="showmenu()"></div>
+            <a href="" class="logo">TRAVEL <span>blog</span></a>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="./blog/blog.html">Blog</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+            <div class="icon">
+                <i class="fas fa-search" onclick="showbar()" id="search-btn"></i>
+                <i class="fas fa-user" onclick="showform()"></i>
+            </div>
+            <form action="" class="search-form">
+                <input type="search" id="search-bar" placeholder="What you looking for...">
+                <label for="search-bar" class="fas fa-search"></label>
+            </form>
+        </header>
+    
+        <div class="login-form">
+            <i class="fas fa-times" id="form-close" onclick="hideform()"></i>
+            <form action="">
+                <h3>login</h3>
+                <input type="email" class="box" placeholder="Enter your email">
+                <input type="password" class="box" placeholder="Enter your password">
+                <input type="submit" value="login now" class="btn">
+                <input type="checkbox" id="remember">
+                <label for="remmember"> remember me</label>
+                <p>forget password? <a href="">click here</a></p>
+                <p>don't have acount? <a href="">sign up</a></p>
+            </form>
+        </div>
+    <!-- login -->
+    
+
+<!-- header -->
+
+
+<!-- content -->
+
+<section class="home" id="home">
+    <div class="content">
+        <h3>TRAVEL BLOG</h3>
+        <p>Discover New Places With Us, Adventure Awaits</p>
+        <a href="#" class="btn">Discover More</a>
+    </div>
+
+    <div class="controls">
+        <span class="video-btn blue" data-src="./my-image/vid-1.mp4"></span>
+        <span class="video-btn" data-src="./my-image/vid-3.mp4"></span>
+        <span class="video-btn" data-src="./my-image/vid-4.mp4"></span>
+        <span class="video-btn" data-src="./my-image/vid-5.mp4"></span>
+    </div>
+    <div class="video-container">
+        <video src="my-image/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+</section>
+
+<!-- package -->
+<section class="packages" id="packages">
+
+    <h1 class="heading">
+        <span>E</span>
+        <span>G</span>
+        <span>Y</span>
+        <span>P</span>
+        <span>T</span>
+
+    </h1>
+
+
+     <div class="container " id="2lby"> <!-- for fun :) -->
+        <div class="box">
+            <img src="./blog/image/alex.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Alex</h3>
+                <p>A coastal city on the Mediterranean, known for its historic sites like the ancient Library of Alexandria and beautiful beaches.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="../travel blog/blog/image/aswan.webp" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i>Aswan</h3>
+                <p>A serene city along the Nile, famous for its temples, the Aswan High Dam, and vibrant Nubian culture.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="my-image/cairo.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Cairo</h3>
+                <p> Egypt's capital, is a historic city on the Nile, famous for the Pyramids and Sphinx. It's a vibrant blend of ancient culture and modern life.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="my-image/pexels-cansu-hangul-464804780-26830601.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Red Sea</h3>
+                <p>A popular region for diving and beach resorts, known for its crystal-clear waters and coral reefs.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="my-image/Tanta.avif" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Tanta</h3>
+                <p>A city in the Nile Delta, known for its agricultural significance and the annual Moulid of Sayed Ahmed al-Badawi festival.</p>
+                
+            </div>
+        </div>
+        <div class="box">
+            <img src="my-image/giza3.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Giza</h3>
+                <p>Home to the iconic Pyramids and the Sphinx, Giza is a major archaeological and tourist destination.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end package -->
+
+<!-- benefits -->
+<section class="benefits" id="benefits">
+
+    <h1 class="heading">
+        <span>B</span>
+        <span>E</span>
+        <span>N</span>
+        <span>E</span>
+        <span>F</span>
+        <span>I</span>
+        <span>T</span>
+        <span>S</span>
+    </h1>
+
+    <div class="container">
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>Rich History</h3>
+            <p>Egypt is home to some of the world's most iconic ancient landmarks, like the Pyramids, Sphinx, and temples of Luxor</p>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-ankh"></i>
+            <h3>Tourism</h3>
+            <p>With its historical sites, beautiful beaches, and the Red Sea, Egypt is a top destination for travelers</p>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Strategic Location</h3>
+            <p>Egypt connects Africa, the Middle East, and Europe, with the Suez Canal playing a crucial role in global trade</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>Diverse Economy</h3>
+            <p>Egypt's economy is supported by agriculture, tourism, natural gas, and the growing tech industry</p>
+        </div>
+        <div class="box">
+            <i class="fa-regular fa-money-bill-1"></i>
+            <h3>Affordable Living</h3>
+            <p>Compared to many countries, Egypt offers a relatively low cost of living</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>Education Hub</h3>
+            <p>Egypt is home to some of the region’s most prestigious universities and institutions, like Cairo University and the American University in Cairo</p>
+        </div>
+    </div>
+</section>
+<!-- end benefits -->
+
+<!-- gallary -->
+
+<section class="gallary" id="gallary">
+
+    <h1 class="heading">
+        <span>P</span>
+        <span>L</span>
+        <span>A</span>
+        <span>C</span>
+        <span>E</span>
+        <span>S</span>
+    </h1>
+
+    <div class="container">
+        <div class="box">
+            <img src="my-image/pyramids.jpg" alt="">
+            <div class="content">
+                <h3>Giza Pyramids</h3>
+                <p>The Great Pyramid, Khafre Pyramid, and the Sphinx are the star attractions.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="my-image/grand egyptian museum.jpg" alt="">
+            <div class="content">
+                <h3>Grand Egyptian Museum</h3>
+                <p>A massive new museum near the pyramids, displaying thousands of ancient artifacts.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="my-image/khan elkhalili.jpg" alt="">
+            <div class="content">
+                <h3>Khan El Khalili</h3>
+                <p> A bustling market in Cairo, perfect for buying traditional crafts, jewelry, and souvenirs</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="my-image/siwa.jpg" alt="">
+            <div class="content">
+                <h3>Siwa Oasis</h3>
+                <p> A remote desert oasis known for its natural springs, salt lakes, and ancient ruins</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="my-image/pexels-mjlo-20401331.jpg" alt="">
+            <div class="content">
+                <h3>El Gouna</h3>
+                <p>El Gouna is a luxury Red Sea resort famous for its clear waters and sandy beaches. It's perfect for water sports and has a lively nightlife</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="my-image/matrouh.jpg" alt="">
+            <div class="content">
+                <h3>Marsa Matrouh</h3>
+                <p>Marsa Matrouh, on the Mediterranean coast, boasts stunning beaches and turquoise waters, offering a relaxed, family-friendly atmosphere</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="my-image/maktabah.jpg" alt="">
+            <div class="content">
+                <h3>Bibliotheca Alexandrina</h3>
+                <p>A modern library and cultural center that pays homage to the ancient Library of Alexandria</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="my-image/corniche.jpg" alt="">
+            <div class="content">
+                <h3>Alexandria Corniche</h3>
+                <p>A scenic waterfront promenade perfect for strolling, dining, and enjoying views of the sea</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="my-image/philae-temple.jpg" alt="">
+            <div class="content">
+                <h3>Philae Temple</h3>
+                <p>Dedicated to the goddess Isis, this ancient temple complex is situated on Agilkia Island and is known for its stunning architecture and scenic views</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!--gallery -->
+
+<!-- contact -->
+<section class="contact" id="contact">
+
+    <h1 class="heading">
+        <span>C</span>
+        <span>O</span>
+        <span>N</span>
+        <span>T</span>
+        <span>A</span>
+        <span>C</span>
+        <span>T</span>
+    </h1>
+
+    <div class="row">
+        <div class="image">
+            <img src="my-image/contact-img.svg" alt="">
+        </div>
+        <form action="">
+            <div class="inputbox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputbox">
+                <input type="number" placeholder="number">
+                <input type="text" placeholder="subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+            <input type="submit" class="btn" value="send message">
+        </form>
+    </div>
+</section>
+<!-- contact -->
+
+<!-- footer -->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Barnch</h3>
+            <a href="#">Egypt</a>
+            <a href="#">London</a>
+            <a href="#">Korea</a>
+            <a href="#">Japan</a>
+        </div>
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="box">
+            <h3>Follow Us</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">Linkedin</a>
+        </div>
+    </div>
+    
+</section>
+
+<!-- footer -->
+
+    <script src="./main.js"></script>
+</body>
+</html>
