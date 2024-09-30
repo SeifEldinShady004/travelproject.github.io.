@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Travel <span>Blog</span></a>
+        <nav class="navbar">
+            <a href="../index.html">Home</a>
+            <a href="#">Blog</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        </div>
+    </header>
+
+    <div class="space"></div>
+    
+
+    <!-- Search Filter -->
+    <div class="container mt-4">
+        <div class="row">
+            <input type="text" placeholder="Search for your Destination" class="w-100 d-block py-2 my-2" id="searchInput" onkeyup="searchBlog()">
+        </div>
+        <button id="addBlog" class="d-block btn-outline-primary btn" style="position: relative; left: 498px;">
+            ADD BLOG
+        </button>
+    </div>
+    <!-- Add/Edit Blog Modal -->
+    <div id="test" class="addBlogPage d-none">
+        <div id="newBlog"> 
+            <h5 id="modalTitle">New Blog</h5>
+            <input type="text" placeholder="Name" id="blogName">
+            <input type="text" placeholder="Destination" id="blogDestination">
+            <input type="text" placeholder="Title" id="blogTitle">
+            <input type="text" placeholder="Blog Brief" id="blogBrief">
+            <textarea id="blogDescription" cols="163" rows="10" placeholder="Description"></textarea>
+            <label for="blogImage">Images</label>
+            <input type="file" accept="image/*" id="blogImage">
+            <button class="btn btn-outline-success" id="saveBlogButton">SAVE</button>
+            <i class="fa-solid fa-xmark text-danger " id="close"></i>
+        </div>
+    </div>
+
+    <!-- Main Blog Section -->
+    <section class="blog-section container mt-5">
+        <h1 class="text-center">Explore Our Travel Experiences</h1>
+
+        <div class="row" id="blogPosts">
+            <!-- Blog Post 1 -->
+            <div class="col-lg-4 col-md-6 mb-4 blog-post" data-destination="Cairo">
+                <div class="card">
+                    <img src="./image/cairo.jpg" class="card-img-top" alt="Destination Image">
+                    <div class="card-body">
+                       <a href="#"><h5 class="card-title">Cairo</h5></a> 
+                        <p class="card-text">Cairo is a vibrant metropolis where ancient landmarks like the Pyramids of Giza and the Sphinx coexist with bustling markets and modern high-rises, enriched by the serene presence of the Nile River.</p>
+                    </div>
+                    <div class="editbtns">
+                        <i class="fa-solid fa-pen-to-square text-warning"></i>
+                        <i class="fa-regular fa-trash-can text-danger"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="col-lg-4 col-md-6 mb-4 blog-post" data-destination="Giza">
+                <div class="card">
+                    <img src="./image/giza3.jpg" class="card-img-top" alt="Destination Image">
+                    <div class="card-body">
+                      <a href="#"><h5 class="card-title">Giza</h5></a> 
+                        <p class="card-text">Giza is famous for its magnificent ancient monuments, including the Great Pyramids and the Sphinx.</p>
+                    </div>
+                    <div class="editbtns">
+                        <i class="fa-solid fa-pen-to-square text-warning"></i>
+                        <i class="fa-regular fa-trash-can text-danger"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 3 -->
+            <div class="col-lg-4 col-md-6 mb-4 blog-post" data-destination="Alexandria">
+                <div class="card">
+                    <img src="./image/alex.jpg" class="card-img-top" alt="Destination Image">
+                    <div class="card-body">
+                       <a href="#"><h5 class="card-title">Alexandria</h5></a> 
+                        <p class="card-text">Alexandria, a historic port city on Egypt's Mediterranean coast, is renowned for its rich cultural heritage.</p>
+                    </div>
+                    <div class="editbtns">
+                        <i class="fa-solid fa-pen-to-square text-warning"></i>
+                        <i class="fa-regular fa-trash-can text-danger"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 4 -->
+            <div class="col-lg-4 col-md-6 mb-4 blog-post" data-destination="Tanta">
+                <div class="card">
+                    <img src="./image/Tanta.avif" class="card-img-top" alt="Destination Image">
+                    <div class="card-body">
+                   <a href="#"><h5 class="card-title">Tanta</h5></a>     
+                        <p class="card-text">Tanta is recognized for its vibrant local markets and religious landmarks.</p>
+                    </div>
+                    <div class="editbtns">
+                        <i class="fa-solid fa-pen-to-square text-warning"></i>
+                        <i class="fa-regular fa-trash-can text-danger"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 5 -->
+            <div class="col-lg-4 col-md-6 mb-4 blog-post" data-destination="Aswan">
+                <div class="card">
+                    <img src="./image/aswan.webp" class="card-img-top" alt="Destination Image">
+                    <div class="card-body">
+                      <a href="#"><h5 class="card-title">Aswan</h5></a>  
+                        
+                        <p class="card-text">Aswan is celebrated for its picturesque landscapes and stunning temples like Philae and Abu Simbel.</p>
+                    </div>
+                    <div class="editbtns">
+                        <i class="fa-solid fa-pen-to-square text-warning"></i>
+                        <i class="fa-regular fa-trash-can text-danger"></i>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>about us</h3>
+        <h1 class="created">created by <span>seif and kareeam</span> all right reserved</h1>
+    </section>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
